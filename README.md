@@ -220,10 +220,11 @@ python notes_export.py slides.pptx -o notes.md
 
 このプロジェクトは MIT ライセンスの下で公開されています。詳細は [LICENSE](LICENSE) ファイルを参照してください。
 
-## 謝辞
+## 使用ライブラリ
 
 - [python-pptx](https://python-pptx.readthedocs.io/) - PowerPoint ファイル処理
 - [gTTS](https://gtts.readthedocs.io/) - Google Text-to-Speech
 - [pydub](https://github.com/jiaaro/pydub) - 音声ファイル処理
 - [tqdm](https://github.com/tqdm/tqdm) - 進捗表示
 - [uv](https://github.com/astral-sh/uv) - 高速パッケージ管理
+
