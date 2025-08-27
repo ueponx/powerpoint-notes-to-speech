@@ -117,12 +117,12 @@ check_dependencies() {
     # 必要なPythonモジュールチェック
     if $USE_UV; then
         if ! uv run python -c "import pptx, gtts, pydub, tqdm" 2>/dev/null; then
-            warn_msg "Some Python modules are missing. Trying to install..."
-            uv add python-pptx gtts pydub tqdm || error_exit "Failed to install Python modules"
+            warn_msg "Some Python modules are missing. Installing from pyproject.toml..."
+            uv sync || error_exit "Failed to install Python modules"
         fi
     else
         if ! python3 -c "import pptx, gtts, pydub, tqdm" 2>/dev/null; then
-            error_exit "Required Python modules are missing. Please install: python-pptx gtts pydub tqdm"
+            error_exit "Required Python modules are missing. Please install: pip install -r requirements.txt"
         fi
     fi
     

@@ -34,9 +34,8 @@ cd powerpoint-notes-to-speech
 # uvをインストール（未インストールの場合）
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# プロジェクトをセットアップ
-uv init --python 3.11
-uv add python-pptx gtts pydub tqdm
+# 依存関係をインストール
+uv sync
 
 # ffmpegをインストール
 # Ubuntu/WSL:
@@ -202,7 +201,7 @@ ffmpeg -version
 
 ```bash
 # 代替方法: pip を使用
-pip install python-pptx gtts pydub tqdm
+pip install -r requirements.txt
 
 # 実行時は python を直接使用
 python notes_export.py slides.pptx -o notes.md
