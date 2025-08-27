@@ -35,7 +35,7 @@ cd powerpoint-notes-to-speech
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # プロジェクトをセットアップ
-uv init --python 3.9
+uv init --python 3.11
 uv add python-pptx gtts pydub tqdm
 
 # ffmpegをインストール
@@ -160,8 +160,6 @@ powerpoint-notes-to-speech/
 
 ## 活用例
 
-### 研究・教育現場での活用
-
 - **発表練習**: 通勤・通学中に音声で発表内容を確認
 - **授業準備**: 講義ノートを音声化して内容確認
 - **アクセシビリティ**: 視覚に頼らない教材提供
@@ -195,7 +193,7 @@ uv run python tts_gtts_make_mp3.py lecture_notes.txt -o lecture_final.mp3 \
 # Ubuntu/WSL
 sudo apt update && sudo apt install ffmpeg
 
-# macOS
+# macOS（多分）
 brew install ffmpeg
 
 # 確認
@@ -218,16 +216,6 @@ python notes_export.py slides.pptx -o notes.md
 - ネットワーク接続を確認（gTTSはオンライン必須）
 - 言語設定が正しいか確認
 
-## 貢献
-
-プルリクエストを歓迎します！大きな変更の場合は、まず Issue を開いて変更内容を議論してください。
-
-1. Fork する
-2. Feature ブランチを作成 (`git checkout -b feature/AmazingFeature`)
-3. 変更をコミット (`git commit -m 'Add some AmazingFeature'`)
-4. ブランチにプッシュ (`git push origin feature/AmazingFeature`)
-5. Pull Request を開く
-
 ## ライセンス
 
 このプロジェクトは MIT ライセンスの下で公開されています。詳細は [LICENSE](LICENSE) ファイルを参照してください。
@@ -239,10 +227,3 @@ python notes_export.py slides.pptx -o notes.md
 - [pydub](https://github.com/jiaaro/pydub) - 音声ファイル処理
 - [tqdm](https://github.com/tqdm/tqdm) - 進捗表示
 - [uv](https://github.com/astral-sh/uv) - 高速パッケージ管理
-
-## 連絡先
-
-質問や提案がある場合は、Issue を開くか、以下までご連絡ください：
-
-- GitHub: [@yourname](https://github.com/yourname)
-- Email: your.email@example.com
