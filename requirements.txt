@@ -1,0 +1,13 @@
+# PowerPoint Notes to Speech - Dependencies
+# Install: pip install -r requirements.txt
+
+# Core dependencies
+python-pptx>=0.6.21  # PowerPoint file processing
+gtts>=2.3.0          # Google Text-to-Speech
+pydub>=0.25.1        # Audio processing and manipulation
+tqdm>=4.65.0         # Progress bars for long operations
+
+# Note: pydub requires ffmpeg to be installed separately
+# Ubuntu/WSL: sudo apt install ffmpeg
+# macOS: brew install ffmpeg
+# Windows: Download from https://ffmpeg.org/download.html
