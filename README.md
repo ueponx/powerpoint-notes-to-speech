@@ -153,9 +153,7 @@ powerpoint-notes-to-speech/
 ├── notes_export.py         # PPTXノート抽出ツール
 ├── clean_markdown.py       # Markdown整形ツール
 ├── tts_gtts_make_mp3.py   # 音声合成ツール
-├── pptx2mp3.sh            # 一括処理用シェルスクリプト
-└── examples/              # サンプルファイル（オプション）
-    └── sample.pptx
+└── pptx2mp3.sh            # 一括処理用シェルスクリプト
 ```
 
 ## 活用例
